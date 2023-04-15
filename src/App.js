@@ -50,7 +50,7 @@ function App() {
         {/* <Textform showAlert={showAlert} heading="Enter The text to analyze below" mode={mode} /> */}
         <Router>
           <Routes>
-            <Route exact path='/' element={<Textform showAlert={showAlert} heading="Enter The text to analyze below" mode={mode} />}>
+            <Route path='/' element={<Textform showAlert={showAlert} heading="Enter The text to analyze below" mode={mode} />}>
             </Route>
             <Route path="/about" element={<About mode={mode} />}>
             </Route>
