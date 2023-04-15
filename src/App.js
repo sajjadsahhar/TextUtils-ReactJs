@@ -30,14 +30,14 @@ function App() {
       setMode('dark')
       document.body.style.backgroundColor = '#042743'
       showAlert("Dark Mode has bee enabled", "success")
-      document.title = "TextUtils - DarkMode"
+      // document.title = "TextUtils - DarkMode"
 
     }
     else {
       setMode('light')
       document.body.style.backgroundColor = 'white'
       showAlert("Light Mode has bee enabled", "success")
-      document.title = "TextUtils - LightMode"
+      // document.title = "TextUtils - LightMode"
     }
 
   }
@@ -47,7 +47,7 @@ function App() {
       <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
       <div className="container my-3">
-        <Textform showAlert={showAlert} heading="Enter The text to analyze below" mode={mode} />
+        <Textform showAlert={showAlert} heading="Try TextUitls - Word Counter, Character Counter, Remove extra spaces" mode={mode} />
         {/* <Router>
           <Routes>
             <Route path='/' element={<Textform showAlert={showAlert} heading="TextUitls - Word Counter, Character Counter, Remove extra spaces" mode={mode} />}>
